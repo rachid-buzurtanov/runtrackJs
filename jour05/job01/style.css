@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction:  column;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #6d6d6d;
+    color: #ff0000;
+}
+
+button {
+    margin-top: 2%;
+    border: none;
+    margin-left: 20%;
+    border-radius: 1em;
+    background-color: #a4aabe;
+    color: #1e00ff;
+    cursor: pointer;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #102216;
+}
+
+header #title {
+    font-size: 2em;
+}
+
+header #buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 16em;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    flex: 1;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    height: fit-content;
+    background-color: #2a2a2a;
+}
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form div input {
+    width: 12em
+}
+
+main form div .email,
+main form div .address{
+    width: 20em;
+}
+
+.message {
+    color: #ff0000;
+    font-size: smaller;
+}

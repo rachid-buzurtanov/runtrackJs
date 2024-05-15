@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>J-05 - Inscription</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="inscription.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="title"><b>Jours_05</b></div>
+            <div id="buttons">
+                <button onclick="window.location.href='inscription.html'">Inscription</button>
+                <button onclick="window.location.href='connexion.html'">Connexion</button>
+            </div>
+        </header>
+
+        <main>
+            <form action="your_backend_script_here" method="POST">
+                <div>
+                    <label for="signUpLastNameInput">Nom</label>
+                    <input type="text" id="signUpLastNameInput" name="signUpLastNameInput" required>
+                </div>
+                <div>
+                    <label for="signUpFirstNameInput">Prénom</label>
+                    <input type="text" id="signUpFirstNameInput" name="signUpFirstNameInput" required>
+                </div>
+                <div>
+                    <label for="signUpEmailInput">E-mail</label>
+                    <input type="email" class="email" id="signUpEmailInput" name="signUpEmailInput" required>
+                </div>
+                <div>
+                    <label for="signUpPasswordInput">Mot de passe</label>
+                    <input type="password" id="signUpPasswordInput" name="signUpPasswordInput" required>
+                </div>
+                <div>
+                    <label for="signUpAddressInput">Adresse</label>
+                    <input type="text" class="address" id="signUpAddressInput" name="signUpAddressInput">
+                </div>
+                <div>
+                    <label for="signUpPostalCodeInput">Code postal</label>
+                    <input type="text" id="signUpPostalCodeInput" name="signUpPostalCodeInput">
+                </div>
+                <div>
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
